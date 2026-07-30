@@ -11,13 +11,6 @@ intentionally excludes unrelated settings, network, and utility artwork.
 To create a pack, rename the folder and update `id` and `name` in `pack.json`,
 then replace any canonical `.svg` files. The folder name and `id`
 **MUST** match. Unchanged icons may be removed; Zen UI safely falls back per icon.
-The `icons` array in `pack.json` is the authoritative list of supported IDs
-and exact replacement filenames.
-
-Only those published IDs can replace existing Zen UI or KOReader icons.
-Unlisted internal icons remain bundled
-and cannot be overridden by a pack. A new, uniquely named icon may still be
-added for selection as a custom Navbar tab icon.
 
 For example:
 
