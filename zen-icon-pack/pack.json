@@ -1,0 +1,257 @@
+{
+  "schema_version": 1,
+  "id": "zen-icon-pack",
+  "name": "Custom Icon Pack Name",
+  "version": "1.0.0",
+  "author": "Example Creator",
+  "icons": [
+    {
+      "id": "appbar.contrast",
+      "filename": "appbar.contrast.svg"
+    },
+    {
+      "id": "appbar.crop",
+      "filename": "appbar.crop.svg"
+    },
+    {
+      "id": "appbar.filebrowser",
+      "filename": "appbar.filebrowser.svg"
+    },
+    {
+      "id": "appbar.menu",
+      "filename": "appbar.menu.svg"
+    },
+    {
+      "id": "appbar.navigation",
+      "filename": "appbar.navigation.svg"
+    },
+    {
+      "id": "appbar.pagefit",
+      "filename": "appbar.pagefit.svg"
+    },
+    {
+      "id": "appbar.pageview",
+      "filename": "appbar.pageview.svg"
+    },
+    {
+      "id": "appbar.pokeball",
+      "filename": "appbar.pokeball.svg"
+    },
+    {
+      "id": "appbar.rotation",
+      "filename": "appbar.rotation.svg"
+    },
+    {
+      "id": "appbar.search",
+      "filename": "appbar.search.svg"
+    },
+    {
+      "id": "appbar.settings",
+      "filename": "appbar.settings.svg"
+    },
+    {
+      "id": "appbar.textsize",
+      "filename": "appbar.textsize.svg"
+    },
+    {
+      "id": "appbar.tools",
+      "filename": "appbar.tools.svg"
+    },
+    {
+      "id": "appbar.typeset",
+      "filename": "appbar.typeset.svg"
+    },
+    {
+      "id": "back.top",
+      "filename": "back.top.svg"
+    },
+    {
+      "id": "back.top.rtl",
+      "filename": "back.top.rtl.svg"
+    },
+    {
+      "id": "book.opened",
+      "filename": "book.opened.svg"
+    },
+    {
+      "id": "bookmark",
+      "filename": "bookmark.svg"
+    },
+    {
+      "id": "cancel",
+      "filename": "cancel.svg"
+    },
+    {
+      "id": "check",
+      "filename": "check.svg"
+    },
+    {
+      "id": "chevron.first",
+      "filename": "chevron.first.svg"
+    },
+    {
+      "id": "chevron.last",
+      "filename": "chevron.last.svg"
+    },
+    {
+      "id": "chevron.left",
+      "filename": "chevron.left.svg"
+    },
+    {
+      "id": "chevron.right",
+      "filename": "chevron.right.svg"
+    },
+    {
+      "id": "chevron.up",
+      "filename": "chevron.up.svg"
+    },
+    {
+      "id": "close",
+      "filename": "close.svg"
+    },
+    {
+      "id": "control.collapse",
+      "filename": "control.collapse.svg"
+    },
+    {
+      "id": "control.expand",
+      "filename": "control.expand.svg"
+    },
+    {
+      "id": "control.expand.alpha",
+      "filename": "control.expand.alpha.svg"
+    },
+    {
+      "id": "cre.render.partial",
+      "filename": "cre.render.partial.svg"
+    },
+    {
+      "id": "dogear.alpha",
+      "filename": "dogear.alpha.svg"
+    },
+    {
+      "id": "edit",
+      "filename": "edit.svg"
+    },
+    {
+      "id": "exit",
+      "filename": "exit.svg"
+    },
+    {
+      "id": "home",
+      "filename": "home.svg"
+    },
+    {
+      "id": "library",
+      "filename": "library.svg"
+    },
+    {
+      "id": "lookup.ai",
+      "filename": "lookup.ai.svg"
+    },
+    {
+      "id": "lookup.dictionary",
+      "filename": "lookup.dictionary.svg"
+    },
+    {
+      "id": "lookup.highlight",
+      "filename": "lookup.highlight.svg"
+    },
+    {
+      "id": "lookup.search",
+      "filename": "lookup.search.svg"
+    },
+    {
+      "id": "lookup.translate",
+      "filename": "lookup.translate.svg"
+    },
+    {
+      "id": "lookup.vocab",
+      "filename": "lookup.vocab.svg"
+    },
+    {
+      "id": "lookup.vocab_remove",
+      "filename": "lookup.vocab_remove.svg"
+    },
+    {
+      "id": "lookup.wikipedia",
+      "filename": "lookup.wikipedia.svg"
+    },
+    {
+      "id": "notice-warning",
+      "filename": "notice-warning.svg"
+    },
+    {
+      "id": "plus",
+      "filename": "plus.svg"
+    },
+    {
+      "id": "position.marker",
+      "filename": "position.marker.svg"
+    },
+    {
+      "id": "position.marker.top",
+      "filename": "position.marker.top.svg"
+    },
+    {
+      "id": "star.empty",
+      "filename": "star.empty.svg"
+    },
+    {
+      "id": "star.full",
+      "filename": "star.full.svg"
+    },
+    {
+      "id": "tab_authors",
+      "filename": "tab_authors.svg"
+    },
+    {
+      "id": "tab_collections",
+      "filename": "tab_collections.svg"
+    },
+    {
+      "id": "tab_exit",
+      "filename": "tab_exit.svg"
+    },
+    {
+      "id": "tab_history",
+      "filename": "tab_history.svg"
+    },
+    {
+      "id": "tab_left",
+      "filename": "tab_left.svg"
+    },
+    {
+      "id": "tab_manga",
+      "filename": "tab_manga.svg"
+    },
+    {
+      "id": "tab_news",
+      "filename": "tab_news.svg"
+    },
+    {
+      "id": "tab_right",
+      "filename": "tab_right.svg"
+    },
+    {
+      "id": "tab_series",
+      "filename": "tab_series.svg"
+    },
+    {
+      "id": "tab_stats",
+      "filename": "tab_stats.svg"
+    },
+    {
+      "id": "tab_tags",
+      "filename": "tab_tags.svg"
+    },
+    {
+      "id": "tab_to_be_read",
+      "filename": "tab_to_be_read.svg"
+    },
+    {
+      "id": "texture-box",
+      "filename": "texture-box.svg"
+    }
+  ]
+}
