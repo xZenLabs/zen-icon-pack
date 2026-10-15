@@ -1,0 +1,28 @@
+Zen UI — Default Light: upstream icon notices
+
+SVG data is retrieved through Iconify. Exact per-file source mappings are in
+the repository's icon-mappings.json.
+
+Material Design Light
+https://icon-sets.iconify.design/mdi-light/
+Copyright (c) 2015-2017 Austin Andrews (https://materialdesignicons.com)
+Licensed under the SIL Open Font License, Version 1.1.
+https://github.com/Templarian/MaterialDesignLight/blob/master/LICENSE
+
+Material Design Icons
+https://icon-sets.iconify.design/mdi/
+Copyright Pictogrammers contributors.
+Licensed under the Apache License, Version 2.0.
+https://github.com/Templarian/MaterialDesign/blob/master/LICENSE
+
+Material Symbols Light
+https://icon-sets.iconify.design/material-symbols-light/
+Copyright Google LLC.
+Licensed under the Apache License, Version 2.0.
+https://github.com/google/material-design-icons/blob/master/LICENSE
+
+Ionicons
+https://icon-sets.iconify.design/ion/
+Copyright (c) 2015-present Ionic (http://ionic.io/)
+Licensed under the MIT License.
+https://github.com/ionic-team/ionicons/blob/main/LICENSE

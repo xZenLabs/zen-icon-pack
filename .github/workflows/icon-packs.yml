@@ -1,0 +1,77 @@
+name: Release Zen icon packs
+
+on:
+  pull_request:
+  push:
+    branches:
+      - main
+  workflow_dispatch:
+
+concurrency:
+  group: release-zen-packs
+  cancel-in-progress: false
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+    outputs:
+      release_tag: ${{ steps.version.outputs.release_tag }}
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Select next release version
+        id: version
+        env:
+          PREVIOUS_SHA: ${{ github.event.before }}
+        run: |
+          version="$(python3 scripts/next-release-version.py)"
+          echo "RELEASE_VERSION=$version" >> "$GITHUB_ENV"
+          echo "release_tag=v$version" >> "$GITHUB_OUTPUT"
+
+      - name: Validate and build icon packs
+        run: |
+          python3 -m unittest discover -s scripts -p 'test_*.py'
+          python3 scripts/build.py --version "$RELEASE_VERSION"
+
+      - name: Check release version
+        run: |
+          for pack in dist/zen-*.zip; do
+            unzip -p "$pack" '*/pack.json' |
+              jq --exit-status --arg version "$RELEASE_VERSION" '.version == $version'
+          done
+
+      - name: Store release bundles
+        if: github.event_name != 'pull_request'
+        uses: actions/upload-artifact@v4
+        with:
+          name: icon-pack-zips
+          path: dist/*.zip
+          if-no-files-found: error
+
+  publish:
+    if: github.event_name != 'pull_request'
+    needs: build
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - name: Download release bundles
+        uses: actions/download-artifact@v5
+        with:
+          name: icon-pack-zips
+          path: dist
+
+      - name: Publish release ZIPs
+        env:
+          GH_TOKEN: ${{ github.token }}
+          GH_REPO: ${{ github.repository }}
+          RELEASE_TAG: ${{ needs.build.outputs.release_tag }}
+        run: |
+          gh release create "$RELEASE_TAG" dist/*.zip \
+            --target "$GITHUB_SHA" --generate-notes \
+            --title "Icon Packs for ZenOS $RELEASE_TAG"
