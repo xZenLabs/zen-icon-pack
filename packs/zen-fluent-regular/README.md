@@ -1,6 +1,6 @@
 # Zen UI — Fluent Regular
 
-This pack replaces the 62 canonical Zen UI icons with the Regular style from
+This pack replaces the 71 canonical Zen UI icons with the Regular style from
 [Fluent UI System Icons](https://icon-sets.iconify.design/fluent/), provided
 through Iconify. It uses 24px variants except where a semantic icon is only
 available at 20px.

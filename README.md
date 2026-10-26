@@ -1,7 +1,7 @@
 # Zen UI Icon Packs
 
 Four complete, e-ink-friendly icon packs for Zen UI, built from open-source
-collections distributed through Iconify. Each pack replaces the same 62
+collections distributed through Iconify. Each pack replaces the same 155
 canonical icons.
 
 ## Icon overviews
@@ -31,6 +31,10 @@ canonical icons.
 
 Download the ZIPs from the repository's
 [latest release](https://github.com/xZenLabs/zen-icon-pack/releases/latest).
+
+Reader controls include `pin.svg`, `footnote.svg`, `return.svg`, and the
+compatible `return_old.svg` lookup, alongside the highlight style, color,
+delete, filter, and sort icons.
 
 ## Install a pack
 
@@ -85,7 +89,7 @@ python3 scripts/build.py
 ```
 
 The deterministic ZIPs are written to `dist/`. The build validates each pack's
-identity, metadata, SVG structure, and exact match with the 62 canonical
+identity, metadata, SVG structure, and exact match with the 155 canonical
 mappings. It also rejects duplicate artwork within the Navbar, top menu,
 reader quick settings, and lookup-action groups.
 

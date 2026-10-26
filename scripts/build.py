@@ -187,8 +187,8 @@ def main() -> None:
         fail("icon-mappings.json must define uniquely named packs")
 
     expected_icons = {Path(name).name for name in packs[0]["icons"]}
-    if len(expected_icons) != 62:
-        fail(f"expected 62 canonical icon mappings, found {len(expected_icons)}")
+    if len(expected_icons) != 155:
+        fail(f"expected 155 canonical icon mappings, found {len(expected_icons)}")
 
     pack_dirs = [validate_pack(pack, expected_icons) for pack in packs]
     output = ROOT / "dist"
