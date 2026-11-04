@@ -65,6 +65,26 @@ class BuildVersionTest(unittest.TestCase):
             self.assertEqual((pack / source).read_bytes(), artwork)
             self.assertFalse((pack / "star.empty.svg").exists())
 
+    def test_refresh_strikes_through_mapped_base_artwork(self):
+        with tempfile.TemporaryDirectory() as temporary:
+            root = Path(temporary)
+            manifest = root / "icon-mappings.json"
+            manifest.write_text(json.dumps({"packs": [{
+                "id": "zen-test", "prefix": "test",
+                "icons": {"reader/pin.svg": "pin", "reader/pin_remove.svg": "strike:reader/pin.svg"},
+            }]}))
+            artwork = b'<svg viewBox="0 0 24 24"><path d="M0 0h1"/></svg>\n'
+            def download(task):
+                return task[3] / task[2], artwork
+            with patch.object(update_icons, "ROOT", root), \
+                    patch.object(update_icons, "MAPPINGS", manifest), \
+                    patch.object(update_icons, "download", side_effect=download):
+                update_icons.main()
+            struck = (root / "packs" / "zen-test" / "reader" / "pin_remove.svg").read_bytes()
+            self.assertEqual(struck, artwork.rstrip()[:-6] +
+                             b'<path stroke="#000000" stroke-linecap="round" stroke-width="1.5" '
+                             b'd="M3 3L21 21"/></svg>\n')
+
     def test_duplicate_lookup_in_another_category_is_rejected(self):
         mappings = json.loads(build.MAPPINGS.read_text())["packs"]
         pack = next(item for item in mappings if (build.ROOT / "packs" / item["id"]).is_dir())
