@@ -1,7 +1,7 @@
 # Zen UI Icon Packs
 
 Four complete, e-ink-friendly icon packs for Zen UI, built from open-source
-collections distributed through Iconify. Each pack replaces the same 198
+collections distributed through Iconify. Each pack replaces the same 199
 canonical icons.
 
 ## Icon overviews
@@ -103,7 +103,7 @@ python3 scripts/build.py
 ```
 
 The deterministic ZIPs are written to `dist/`. The build validates each pack's
-identity, metadata, SVG structure, and exact match with the 198 canonical
+identity, metadata, SVG structure, and exact match with the 199 canonical
 mappings. It also rejects duplicate artwork within the Navbar, top menu,
 reader quick settings, and lookup-action groups.
 

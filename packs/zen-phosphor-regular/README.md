@@ -1,6 +1,6 @@
 # Zen UI — Phosphor Regular
 
-This pack replaces the 198 canonical Zen UI icons with the Regular style from
+This pack replaces the 199 canonical Zen UI icons with the Regular style from
 [Phosphor](https://icon-sets.iconify.design/ph/), provided through Iconify.
 
 Copy this folder or its ZIP into KOReader's `icons/zen` directory. Enable
