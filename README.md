@@ -1,7 +1,7 @@
 # Zen UI Icon Packs
 
 Four complete, e-ink-friendly icon packs for Zen UI, built from open-source
-collections distributed through Iconify. Each pack replaces the same 189
+collections distributed through Iconify. Each pack replaces the same 198
 canonical icons.
 
 ## Icon overviews
@@ -42,6 +42,13 @@ Page-browser and reader-control lookups include `annotations.svg`,
 `pin_remove.svg` and `bookmark_remove.svg` draw a line through the pack's own
 pin and bookmark. Settings rows also cover the copy, cut, paste, sort, sync,
 and other `settings_*` lookups used by ZenOS context menus.
+
+Context-menu and settings rows also resolve `settings_link.svg`,
+`settings_incognito.svg`, `settings_send.svg`, `settings_wifi_off.svg`,
+`settings_chevron_left.svg`, `settings_chevron_right.svg`,
+`settings_file_cabinet.svg`, `settings_book_outline.svg`, and
+`settings_file_document_outline.svg`. Ionicons has no Wi-Fi-off icon, so its
+`settings_wifi_off.svg` draws a line through the pack's Wi-Fi icon.
 
 ## Install a pack
 
@@ -96,7 +103,7 @@ python3 scripts/build.py
 ```
 
 The deterministic ZIPs are written to `dist/`. The build validates each pack's
-identity, metadata, SVG structure, and exact match with the 189 canonical
+identity, metadata, SVG structure, and exact match with the 198 canonical
 mappings. It also rejects duplicate artwork within the Navbar, top menu,
 reader quick settings, and lookup-action groups.
 

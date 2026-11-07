@@ -1,6 +1,6 @@
 # Zen UI — Ionicons Outline
 
-This pack replaces the 189 canonical Zen UI icons with the Outline style from
+This pack replaces the 198 canonical Zen UI icons with the Outline style from
 [Ionicons](https://icon-sets.iconify.design/ion/), provided through Iconify.
 
 Copy this folder or its ZIP into KOReader's `icons/zen` directory. Enable
