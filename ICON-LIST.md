@@ -9,7 +9,7 @@ Release ZIPs flatten the categories into the pack root.
 |---|---|
 | [navbar](#navbar) | Library, reading lists, Navbar tabs, and left/right page tabs. |
 | [lookup](#lookup) | Highlight, dictionary, vocabulary, search, and AI lookup actions. |
-| [launcher](#launcher) | Highlight style, color, and delete controls, plus the ZenFM launcher entry. |
+| [launcher](#launcher) | Highlight style, color, and delete controls, plus the BookOrbit and Bookshelf tabs and the BookOrbit, Bookshelf, and ZenFM launcher entries. |
 | [zenpm](#zenpm) | Annotation filtering and sorting. |
 | [reader](#reader) | Pins, footnotes, return navigation, and reader-control and page-browser actions. |
 | [settings](#settings) | ZenOS settings menu rows, mirroring ZenOS's bundled `settings_*` lookups. |
@@ -223,6 +223,9 @@ Stock KOReader icons, including appbar, plus/info, bookmarks, and book_open.
 
 | Lookup filename | Default Light | Fluent Regular | Ionicons Outline | Phosphor Regular |
 |---|---|---|---|---|
+| `bookorbit.svg` | [SVG](packs/zen-ui-default/launcher/bookorbit.svg) | [SVG](packs/zen-fluent-regular/launcher/bookorbit.svg) | [SVG](packs/zen-ionicons-outline/launcher/bookorbit.svg) | [SVG](packs/zen-phosphor-regular/launcher/bookorbit.svg) |
+| `bookorbit.tab.svg` | [SVG](packs/zen-ui-default/launcher/bookorbit.tab.svg) | [SVG](packs/zen-fluent-regular/launcher/bookorbit.tab.svg) | [SVG](packs/zen-ionicons-outline/launcher/bookorbit.tab.svg) | [SVG](packs/zen-phosphor-regular/launcher/bookorbit.tab.svg) |
+| `bookshelf.svg` | [SVG](packs/zen-ui-default/launcher/bookshelf.svg) | [SVG](packs/zen-fluent-regular/launcher/bookshelf.svg) | [SVG](packs/zen-ionicons-outline/launcher/bookshelf.svg) | [SVG](packs/zen-phosphor-regular/launcher/bookshelf.svg) |
 | `font.svg` | [SVG](packs/zen-ui-default/launcher/font.svg) | [SVG](packs/zen-fluent-regular/launcher/font.svg) | [SVG](packs/zen-ionicons-outline/launcher/font.svg) | [SVG](packs/zen-phosphor-regular/launcher/font.svg) |
 | `paint_palette.svg` | [SVG](packs/zen-ui-default/launcher/paint_palette.svg) | [SVG](packs/zen-fluent-regular/launcher/paint_palette.svg) | [SVG](packs/zen-ionicons-outline/launcher/paint_palette.svg) | [SVG](packs/zen-phosphor-regular/launcher/paint_palette.svg) |
 | `trash.svg` | [SVG](packs/zen-ui-default/launcher/trash.svg) | [SVG](packs/zen-fluent-regular/launcher/trash.svg) | [SVG](packs/zen-ionicons-outline/launcher/trash.svg) | [SVG](packs/zen-phosphor-regular/launcher/trash.svg) |
